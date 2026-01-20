@@ -82,7 +82,7 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
               >
-                🚀 Product Creator × AI Developer × BCI Enthusiast
+                🤖 AI Enthusiast × Learning Hub Creator × Tech Learner
               </motion.span>
             </motion.div>
 
@@ -107,7 +107,7 @@ export default function Hero() {
               className="text-xl text-gray-300 mb-8 max-w-lg"
               variants={itemVariants}
             >
-              I run NexusGroups—a software company that builds custom web platforms and AI solutions. Proven track record: 10K+ users on NexusGroups.app with AdSense, and multiple client projects delivered. I use AI as my development superpower to deliver fast. Python, NumPy specialist, and learning BCI.
+              Welcome to my AI Learning Hub—a platform dedicated to exploring artificial intelligence, machine learning, and emerging technologies. I share knowledge through projects, certifications, and practical examples. Passionate about AI development, Python programming, and continuous learning. Let's explore the future of technology together.
             </motion.p>
 
             <motion.div
