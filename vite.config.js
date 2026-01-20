@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     host: true,
     fs: {
-      allow: ['src', 'node_modules']
+      allow: ['.', 'src', 'node_modules']
     }
   },
   publicDir: 'src/public'
