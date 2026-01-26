@@ -9,8 +9,6 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    fs: {
-      strict: false,
-    },
+    middlewareMode: false,
   },
 })
