@@ -4,9 +4,6 @@
   "version": "0.0.1",
   "type": "module",
   "homepage": "https://namra-acharya.github.io/namra_portfolio/",
-  "engines": {
-    "node": "24.x"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
