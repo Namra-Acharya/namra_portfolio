@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'docs',
     emptyOutDir: true,
+    sourcemap: false,
     rollupOptions: {
       input: {
         main: './index.html'
@@ -16,5 +17,9 @@ export default defineConfig({
   publicDir: 'src/public',
   server: {
     middlewareMode: false,
+    cors: true,
   },
+  preview: {
+    port: 5173,
+  }
 })
