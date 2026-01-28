@@ -8,45 +8,51 @@ export default function Skills() {
   const skills = [
     {
       icon: Code,
+      title: 'Python Scientific Stack',
+      desc: '90%+ proficiency in NumPy, Pandas, and Matplotlib. Expert-level data manipulation, numerical computing, and visualization. Strong foundation for signal processing and data analysis work.',
+      color: 'from-green-400 to-emerald-400',
+      subskills: ['NumPy (95%)', 'Pandas (95%)', 'Matplotlib (90%)', 'SciPy'],
+      level: 'Expert'
+    },
+    {
+      icon: Zap,
       title: 'EEG Signal Processing & Analysis',
-      desc: 'Advanced signal processing for brain signals. Pre-processing, artifact removal, feature extraction, time-frequency analysis, real-time processing. Deep expertise in EEG data pipelines.',
+      desc: 'Deep expertise in brain signal processing. Pre-processing, artifact removal, feature extraction, time-frequency analysis, and real-time signal pipelines for BCI systems.',
       color: 'from-cyan-400 to-blue-400',
-      subskills: ['EEG Pre-processing', 'Artifact Detection', 'FFT/Wavelets', 'Real-time Processing']
+      subskills: ['EEG Pre-processing', 'FFT/Wavelets', 'Feature Extraction', 'Real-time Processing'],
+      level: 'Expert'
+    },
+    {
+      icon: Code,
+      title: 'Machine Learning',
+      desc: 'Currently learning ML fundamentals with focus on classification algorithms, feature engineering, and model evaluation. Building knowledge for BCI signal classification tasks.',
+      color: 'from-yellow-400 to-amber-400',
+      subskills: ['Classification Algorithms', 'Feature Engineering', 'Model Evaluation', 'Cross-validation'],
+      level: 'Learning'
+    },
+    {
+      icon: Palette,
+      title: 'Deep Learning (Future Focus)',
+      desc: 'Planning to advance into Deep Learning. Focus will be on neural networks for BCI applications: CNNs for spatial patterns, RNNs for temporal dynamics, and attention mechanisms.',
+      color: 'from-purple-400 to-pink-400',
+      subskills: ['CNNs', 'RNNs', 'Attention Mechanisms', 'Transfer Learning'],
+      level: 'Future'
     },
     {
       icon: Zap,
       title: 'Neural Decoding & BCI Algorithms',
-      desc: 'Designing and implementing algorithms for brain-computer interfaces. Feature classification, signal-to-intent mapping, decoder training, calibration & adaptation strategies.',
-      color: 'from-purple-400 to-pink-400',
-      subskills: ['Signal Classification', 'Decoding Algorithms', 'Pattern Recognition', 'Calibration']
-    },
-    {
-      icon: Palette,
-      title: 'Deep Learning for Neural Data',
-      desc: 'Applying neural networks to brain signals. CNNs for spatial-temporal patterns, RNNs for temporal dynamics, attention mechanisms for selective processing of EEG data.',
+      desc: 'Designing algorithms for brain-computer interfaces. Signal-to-intent mapping, decoder training, and adaptation strategies. Combining signal processing with ML for practical BCI solutions.',
       color: 'from-indigo-400 to-purple-400',
-      subskills: ['CNNs', 'RNNs', 'Attention Mechanisms', 'Transfer Learning']
+      subskills: ['Decoding Algorithms', 'Pattern Recognition', 'Calibration', 'Real-time Classification'],
+      level: 'Expert'
     },
     {
       icon: Code,
-      title: 'Python & Scientific Computing',
-      desc: 'Expert-level Python with NumPy, SciPy, Pandas. Data manipulation, mathematical operations, statistical analysis. Optimized code for real-time BCI applications.',
-      color: 'from-green-400 to-emerald-400',
-      subskills: ['NumPy/SciPy', 'Pandas', 'Scientific Computing', 'Performance Optimization']
-    },
-    {
-      icon: Zap,
-      title: 'Data Visualization & Analysis',
-      desc: 'Communicating complex neural data through visualizations. Matplotlib, signal plotting, heatmaps, frequency analysis plots. Making research insights accessible and actionable.',
-      color: 'from-yellow-400 to-orange-400',
-      subskills: ['Matplotlib', 'Signal Visualization', 'Statistical Plots', 'Report Generation']
-    },
-    {
-      icon: Palette,
       title: 'Web Development & Deployment',
-      desc: 'Building web interfaces for BCI systems. Full-stack development, real-time data dashboards, cloud deployment. Creating platforms for neurotechnology applications.',
+      desc: 'Building web interfaces for BCI systems and data dashboards. Full-stack development, real-time data visualization, and cloud deployment for neurotechnology applications.',
       color: 'from-blue-400 to-cyan-400',
-      subskills: ['React', 'Backend APIs', 'WebSockets', 'Cloud Deployment']
+      subskills: ['React', 'Real-time Dashboards', 'WebSockets', 'Cloud Deployment'],
+      level: 'Proficient'
     }
   ]
 
@@ -124,7 +130,17 @@ export default function Skills() {
                         <Icon size={32} />
                       </motion.div>
 
-                      <h3 className="text-xl font-bold mb-2">{skill.title}</h3>
+                      <div className="flex items-start justify-between mb-2">
+                        <h3 className="text-xl font-bold">{skill.title}</h3>
+                        <span className={`text-xs font-bold px-2 py-1 rounded-full ${
+                          skill.level === 'Expert' ? 'bg-green-500/20 text-green-400' :
+                          skill.level === 'Learning' ? 'bg-yellow-500/20 text-yellow-400' :
+                          skill.level === 'Future' ? 'bg-purple-500/20 text-purple-400' :
+                          'bg-blue-500/20 text-blue-400'
+                        }`}>
+                          {skill.level}
+                        </span>
+                      </div>
                       <p className="text-gray-400 text-sm leading-relaxed mb-4">{skill.desc}</p>
 
                       {skill.subskills && (
