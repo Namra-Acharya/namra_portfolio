@@ -47,7 +47,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="pt-32 pb-20 px-4 relative overflow-hidden">
+    <section id="home" className="pt-32 pb-20 px-4 relative overflow-hidden" data-motion>
       {/* Animated background shapes */}
       <motion.div
         className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl"
@@ -56,6 +56,7 @@ export default function Hero() {
           opacity: [0.3, 0.5, 0.3]
         }}
         transition={{ duration: 8, repeat: Infinity }}
+        style={{ willChange: 'transform, opacity' }}
       />
       <motion.div
         className="absolute bottom-10 left-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"
@@ -64,6 +65,7 @@ export default function Hero() {
           opacity: [0.4, 0.2, 0.4]
         }}
         transition={{ duration: 10, repeat: Infinity }}
+        style={{ willChange: 'transform, opacity' }}
       />
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -82,7 +84,7 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
               >
-                🤖 AI Enthusiast × Learning Hub Creator × Tech Learner
+                🧠 BCI Researcher × Neural Signal Processing × AI Engineer
               </motion.span>
             </motion.div>
 
@@ -107,7 +109,7 @@ export default function Hero() {
               className="text-xl text-gray-300 mb-8 max-w-lg"
               variants={itemVariants}
             >
-              Welcome to my AI Learning Hub—a platform dedicated to exploring artificial intelligence, machine learning, and emerging technologies. I share knowledge through projects, certifications, and practical examples. Passionate about AI development, Python programming, and continuous learning. Let's explore the future of technology together.
+              Welcome! I'm dedicated to advancing Brain-Computer Interface technology through rigorous signal processing, neural decoding algorithms, and AI-driven solutions. My work focuses on bridging the gap between brain activity and computational systems. Passionate about pushing the boundaries of neurotechnology. Let's build the future of human-computer interaction together.
             </motion.p>
 
             <motion.div

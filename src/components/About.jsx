@@ -81,7 +81,7 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-bold text-accent mb-3">What I Do</h3>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  I run <motion.span className="text-accent font-semibold">NexusGroups</motion.span>, a software development company building custom web platforms and AI solutions. I've moved beyond basic web development—I now leverage AI strategically to design, develop, and deploy complete platforms rapidly. I understand product architecture, user experience, and real client needs.
+                  I work as a <motion.span className="text-accent font-semibold">freelance BCI researcher and developer</motion.span>, working with real clients to build custom solutions in neurotechnology and AI. I combine rigorous signal processing, neural decoding algorithms, and AI to develop practical BCI applications. I understand the complexities of brain signal analysis, have strong product architecture knowledge, and deliver solutions that address real client needs.
                 </p>
                 <div className="mt-4 space-y-2 text-gray-300">
                   <p className="flex gap-3"><span className="text-accent font-bold">✓</span> <span><strong>NexusGroups.app</strong> - Student learning platform with 10K+ active users and AdSense revenue</span></p>
@@ -94,25 +94,25 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-bold text-accent mb-3">My Specialization</h3>
                 <div className="space-y-2 text-gray-300">
-                  <p><strong className="text-green-400">Python & Data Analysis:</strong> NumPy, Pandas, Matplotlib - strong command with daily usage</p>
-                  <p><strong className="text-blue-400">Machine Learning:</strong> Learning with focus on signal-based and neural data analysis</p>
-                  <p><strong className="text-cyan-400">BCI & Neurotechnology:</strong> Deep interest in Brain-Computer Interfaces, currently at foundational stage</p>
-                  <p><strong className="text-purple-400">Web & Deployment:</strong> Full lifecycle understanding from idea → build → deploy → maintain</p>
+                  <p><strong className="text-cyan-400">Brain-Computer Interfaces (BCI):</strong> My primary focus. Signal processing, EEG analysis, neural decoding, and human-computer interaction through brain activity</p>
+                  <p><strong className="text-green-400">Signal Processing & Neural Data:</strong> EEG signal analysis, feature extraction, time-frequency analysis, real-time signal processing</p>
+                  <p><strong className="text-blue-400">Machine Learning for Neural Data:</strong> Deep learning models for BCI applications, classification algorithms for brain signals, pattern recognition</p>
+                  <p><strong className="text-purple-400">Python & Scientific Computing:</strong> NumPy, Pandas, Matplotlib, SciPy - deep expertise with neuroscience applications</p>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-accent mb-3">My Philosophy</h3>
+                <h3 className="text-2xl font-bold text-accent mb-3">My Philosophy & Vision</h3>
                 <p className="text-lg text-gray-300 leading-relaxed italic border-l-4 border-accent pl-4">
-                  "I'm not driven by hype or quick money. I'm driven by deep understanding, long-term relevance, and hard problems. That's why BCI and neurotechnology attract me—they require patience, persistence, and tolerance for uncertainty."
+                  "BCI is not just a technology—it's the future of human-computer interaction. I'm committed to advancing the field by building robust signal processing pipelines, developing intelligent decoding algorithms, and creating practical BCI applications. This is a hard problem that requires deep understanding, relentless experimentation, and tolerance for uncertainty. That's exactly where I thrive."
                 </p>
               </div>
 
               <motion.div className="grid grid-cols-2 gap-3 pt-4">
-                {['AI-Powered Dev', 'Python/NumPy', 'Data Analysis', 'BCI Learning', 'Product Design', 'Full-Stack Deployment', 'AI Agents', 'Signal Processing'].map((skill) => (
+                {['EEG Signal Analysis', 'Neural Decoding', 'Python/NumPy', 'Deep Learning', 'BCI Algorithms', 'Real-time Processing', 'AI Integration', 'Neuroscience'].map((skill) => (
                   <motion.div
                     key={skill}
-                    className="p-3 bg-gradient-to-r from-accent/10 to-blue-500/10 rounded-lg border border-accent/30 text-center hover:border-accent/60 hover:from-accent/20 hover:to-blue-500/20 transition-all"
+                    className="p-3 bg-gradient-to-r from-accent/10 to-cyan-500/10 rounded-lg border border-accent/30 text-center hover:border-accent/60 hover:from-accent/20 hover:to-cyan-500/20 transition-all"
                     whileHover={{ scale: 1.05, y: -2 }}
                   >
                     <span className="text-sm font-semibold text-gray-200">{skill}</span>

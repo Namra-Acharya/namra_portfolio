@@ -33,22 +33,6 @@ export default function Projects() {
       github: '#'
     },
     {
-      title: 'Client Project #1 (Incoming)',
-      desc: 'Custom web development project through NexusGroups company. Currently in development phase with client. Demonstrates ability to secure and manage client work efficiently.',
-      tags: ['Client Work', 'Custom Development', 'In Progress', 'NexusGroups', 'Pipeline'],
-      image: '💼',
-      link: '#',
-      github: '#'
-    },
-    {
-      title: 'Client Project #2 (Incoming)',
-      desc: 'Second custom web development project in the pipeline. Showcases capability to handle multiple client projects simultaneously while maintaining quality and timelines.',
-      tags: ['Client Work', 'Custom Development', 'In Progress', 'NexusGroups', 'Pipeline'],
-      image: '💼',
-      link: '#',
-      github: '#'
-    },
-    {
       title: 'AI Personal Assistant',
       desc: 'Personal project: Intelligent conversational AI agent built in Python. Trained to understand context, maintain conversation flow, provide helpful responses. Demonstrates advanced LLM integration and agent reasoning capabilities.',
       tags: ['Python', 'LLM', 'NLP', 'Conversational AI', 'Personal Project'],

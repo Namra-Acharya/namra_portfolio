@@ -5,7 +5,14 @@ import { useState } from 'react'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const navItems = ['Home', 'About', 'Skills', 'Projects', 'Services', 'Resume', 'Certificates', 'Contact']
+  const navItems = [
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Skills', id: 'skills' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Certificates', id: 'certificates' },
+    { name: 'Contact', id: 'contact' }
+  ]
 
   const navVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -54,15 +61,15 @@ export default function Navbar() {
         <div className="hidden md:flex gap-8">
           {navItems.map((item, i) => (
             <motion.a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.id}
+              href={`#${item.id}`}
               className="text-gray-300 hover:text-accent transition-colors relative group"
               custom={i}
               initial="hidden"
               animate="visible"
               variants={navVariants}
             >
-              {item}
+              {item.name}
               <motion.div
                 className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"
                 whileHover={{ width: "100%" }}
@@ -92,13 +99,13 @@ export default function Navbar() {
         >
           {navItems.map((item) => (
             <motion.a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.id}
+              href={`#${item.id}`}
               className="block py-2 text-gray-300 hover:text-accent"
               whileHover={{ x: 10 }}
               onClick={() => setIsOpen(false)}
             >
-              {item}
+              {item.name}
             </motion.a>
           ))}
         </motion.div>

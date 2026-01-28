@@ -293,7 +293,7 @@ export default function Certificates() {
               {/* PDF Viewer */}
               <div className="flex-1 overflow-auto bg-secondary/20">
                 <iframe
-                  src={`/${encodeURIComponent(selectedCert.pdfFile)}`}
+                  src={`${import.meta.env.BASE_URL}public/${encodeURIComponent(selectedCert.pdfFile)}`}
                   className="w-full h-full"
                   title={selectedCert.title}
                 />
@@ -305,7 +305,7 @@ export default function Certificates() {
                   {selectedCert.issuer} • {selectedCert.date}
                 </p>
                 <motion.a
-                  href={`/${encodeURIComponent(selectedCert.pdfFile)}`}
+                  href={`${import.meta.env.BASE_URL}public/${encodeURIComponent(selectedCert.pdfFile)}`}
                   download={selectedCert.pdfFile}
                   className="flex items-center gap-2 px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent-hover transition-colors"
                   whileHover={{ scale: 1.05 }}

@@ -3,11 +3,17 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/namra_portfolio/',
+  base: process.env.NODE_ENV === 'production' ? '/namra_portfolio/' : '/',
   build: {
     outDir: 'docs',
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    }
   },
+  publicDir: 'src/public',
   server: {
     middlewareMode: false,
   },

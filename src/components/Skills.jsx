@@ -8,45 +8,45 @@ export default function Skills() {
   const skills = [
     {
       icon: Code,
-      title: 'AI-Powered Product Building',
-      desc: 'Leverage AI tools to design, develop & deploy full-featured platforms rapidly. Product architecture, UX design, end-to-end delivery. Built NexusGroups.app with 10K+ users.',
-      color: 'from-blue-400 to-cyan-400',
-      subskills: ['Product Design', 'UI/UX', 'Figma', 'Rapid Prototyping']
+      title: 'EEG Signal Processing & Analysis',
+      desc: 'Advanced signal processing for brain signals. Pre-processing, artifact removal, feature extraction, time-frequency analysis, real-time processing. Deep expertise in EEG data pipelines.',
+      color: 'from-cyan-400 to-blue-400',
+      subskills: ['EEG Pre-processing', 'Artifact Detection', 'FFT/Wavelets', 'Real-time Processing']
     },
     {
       icon: Zap,
-      title: 'AI Agent Development',
-      desc: 'Build intelligent conversational agents with Python. Voice-based automation, LLM integration, reasoning, multi-turn interactions, personal AI assistants',
+      title: 'Neural Decoding & BCI Algorithms',
+      desc: 'Designing and implementing algorithms for brain-computer interfaces. Feature classification, signal-to-intent mapping, decoder training, calibration & adaptation strategies.',
       color: 'from-purple-400 to-pink-400',
-      subskills: ['Voice I/O', 'System Integration', 'Automation', 'AI Orchestration']
+      subskills: ['Signal Classification', 'Decoding Algorithms', 'Pattern Recognition', 'Calibration']
     },
     {
       icon: Palette,
-      title: 'Python & Data Analysis',
-      desc: 'Python mastery with NumPy arrays, vectorization, Pandas data manipulation, Matplotlib visualization. Strong command through daily usage and extensive practice.',
-      color: 'from-green-400 to-emerald-400',
-      subskills: ['NumPy', 'Pandas', 'Matplotlib', 'Data Transformation']
+      title: 'Deep Learning for Neural Data',
+      desc: 'Applying neural networks to brain signals. CNNs for spatial-temporal patterns, RNNs for temporal dynamics, attention mechanisms for selective processing of EEG data.',
+      color: 'from-indigo-400 to-purple-400',
+      subskills: ['CNNs', 'RNNs', 'Attention Mechanisms', 'Transfer Learning']
     },
     {
       icon: Code,
-      title: 'Machine Learning & Signal Processing',
-      desc: 'Data preprocessing, feature engineering, ML fundamentals. Currently learning with focus on signal-based and neural data analysis for BCI applications.',
-      color: 'from-pink-400 to-red-400',
-      subskills: ['Data Prep', 'Feature Engineering', 'Neural Signals', 'Signal Analysis']
+      title: 'Python & Scientific Computing',
+      desc: 'Expert-level Python with NumPy, SciPy, Pandas. Data manipulation, mathematical operations, statistical analysis. Optimized code for real-time BCI applications.',
+      color: 'from-green-400 to-emerald-400',
+      subskills: ['NumPy/SciPy', 'Pandas', 'Scientific Computing', 'Performance Optimization']
     },
     {
       icon: Zap,
-      title: 'Web Platform Development',
-      desc: 'Full-stack platforms: student learning hubs, healthcare management, educational tools. HTML, CSS, JavaScript, React integration, responsive design, deployment & scaling.',
+      title: 'Data Visualization & Analysis',
+      desc: 'Communicating complex neural data through visualizations. Matplotlib, signal plotting, heatmaps, frequency analysis plots. Making research insights accessible and actionable.',
       color: 'from-yellow-400 to-orange-400',
-      subskills: ['HTML/CSS', 'JavaScript', 'Deployment', 'Hosting & SEO']
+      subskills: ['Matplotlib', 'Signal Visualization', 'Statistical Plots', 'Report Generation']
     },
     {
       icon: Palette,
-      title: 'Brain-Computer Interface (BCI)',
-      desc: 'Foundational knowledge in BCI & neurotechnology. Understanding brain signals (Alpha, Beta, Gamma, Theta, Delta), EEG data representation, and ML applications in neural systems.',
-      color: 'from-indigo-400 to-blue-400',
-      subskills: ['EEG Analysis', 'Neural Signals', 'Signal Processing', 'Neurotechnology']
+      title: 'Web Development & Deployment',
+      desc: 'Building web interfaces for BCI systems. Full-stack development, real-time data dashboards, cloud deployment. Creating platforms for neurotechnology applications.',
+      color: 'from-blue-400 to-cyan-400',
+      subskills: ['React', 'Backend APIs', 'WebSockets', 'Cloud Deployment']
     }
   ]
 
