@@ -16,11 +16,7 @@ jobs:
         with:
           node-version: 24
       - run: npm install
-      - run: npm run build
-      - name: Update base path in HTML
-        run: |
-          sed -i "s|href=\"/|href=\"${{ env.BASE_PATH }}/|g" docs/index.html
-          sed -i "s|src=\"/|src=\"${{ env.BASE_PATH }}/|g" docs/index.html
+      - run: NODE_ENV=production npm run build
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
