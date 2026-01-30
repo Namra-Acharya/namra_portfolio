@@ -1,15 +1,626 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Namra Acharya - AI Enthusiast, Full-Stack Developer, and Tech Innovator. Explore my portfolio, projects, and skills." />
-    <meta name="theme-color" content="#0f172a" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Namra Acharya - AI Enthusiast, Full-Stack Developer, and Tech Innovator. Explore my portfolio, projects, and skills.">
+    <meta name="theme-color" content="#0f172a">
     <title>Namra Acharya - Portfolio</title>
-    <script type="module" crossorigin src="/namra_portfolio/assets/index-1fkrUKhR.js"></script>
-    <link rel="stylesheet" crossorigin href="/namra_portfolio/assets/index-DUaIdNJy.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+  <link rel="stylesheet" crossorigin href="/namra_portfolio/assets/main-PFmufwcJ.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Namra</div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <span class="hero-tag">🧠 BCI Researcher × Neural Signal Processing × AI Engineer</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Namra Acharya</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Welcome! I'm dedicated to advancing Brain-Computer Interface technology through rigorous signal processing, neural decoding algorithms, and AI-driven solutions. My work focuses on bridging the gap between brain activity and computational systems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="hero-card">
+                        <svg class="hero-svg" viewBox="0 0 100 100" fill="currentColor">
+                            <circle cx="50" cy="30" r="20" opacity="0.3"/>
+                            <circle cx="30" cy="70" r="15" opacity="0.2"/>
+                            <circle cx="70" cy="65" r="18" opacity="0.25"/>
+                            <path d="M50 30 L30 70 L70 65 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+            <p class="section-subtitle">A Computer Science student passionate about advancing Brain-Computer Interface technology through rigorous signal processing and innovative AI solutions.</p>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎓</div>
+                    <h3>Background</h3>
+                    <ul class="about-list">
+                        <li>Computer Science (B.Tech 2024-2027)</li>
+                        <li>CGPA: 8.78/10</li>
+                        <li>4+ years hands-on learning</li>
+                        <li>Daily practice & deep focus</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>Primary Focus</h3>
+                    <ul class="about-list">
+                        <li>Brain-Computer Interfaces (BCI)</li>
+                        <li>EEG Signal Processing</li>
+                        <li>Neural Decoding Algorithms</li>
+                        <li>Advancing neurotechnology</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon">⚡</div>
+                    <h3>Current Work</h3>
+                    <ul class="about-list">
+                        <li>Freelance BCI Researcher</li>
+                        <li>Working with real clients</li>
+                        <li>Custom AI Solutions</li>
+                        <li>Solving hard neurotechnology problems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vision-box">
+                <p><strong>Vision:</strong> I'm committed to advancing Brain-Computer Interface technology by developing robust signal processing pipelines, intelligent neural decoding algorithms, and practical BCI applications that solve real-world problems.</p>
+            </div>
+
+            <h3 class="expertise-title">Core Expertise</h3>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <div class="expertise-header">
+                        <span>NumPy</span>
+                        <span class="status expert">Expert</span>
+                    </div>
+                    <div class="expertise-bar">
+                        <div class="expertise-fill" style="width: 95%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                    </div>
+                    <span class="expertise-percent">95%</span>
+                </div>
+
+                <div class="expertise-item">
+                    <div class="expertise-header">
+                        <span>Pandas</span>
+                        <span class="status expert">Expert</span>
+                    </div>
+                    <div class="expertise-bar">
+                        <div class="expertise-fill" style="width: 95%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                    </div>
+                    <span class="expertise-percent">95%</span>
+                </div>
+
+                <div class="expertise-item">
+                    <div class="expertise-header">
+                        <span>Matplotlib</span>
+                        <span class="status expert">Expert</span>
+                    </div>
+                    <div class="expertise-bar">
+                        <div class="expertise-fill" style="width: 90%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                    </div>
+                    <span class="expertise-percent">90%</span>
+                </div>
+
+                <div class="expertise-item">
+                    <div class="expertise-header">
+                        <span>EEG Signal Processing</span>
+                        <span class="status expert">Expert</span>
+                    </div>
+                    <div class="expertise-bar">
+                        <div class="expertise-fill" style="width: 90%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                    </div>
+                    <span class="expertise-percent">90%</span>
+                </div>
+
+                <div class="expertise-item">
+                    <div class="expertise-header">
+                        <span>Machine Learning</span>
+                        <span class="status learning">Learning</span>
+                    </div>
+                    <div class="expertise-bar">
+                        <div class="expertise-fill" style="width: 70%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                    </div>
+                    <span class="expertise-percent">70%</span>
+                </div>
+
+                <div class="expertise-item">
+                    <div class="expertise-header">
+                        <span>Deep Learning</span>
+                        <span class="status future">Future Focus</span>
+                    </div>
+                    <div class="expertise-bar">
+                        <div class="expertise-fill" style="width: 40%; background: linear-gradient(90deg, #a855f7, #d946ef);"></div>
+                    </div>
+                    <span class="expertise-percent">40%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="gradient-text">My Skills</span></h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python Scientific Stack</h3>
+                    <p>90%+ proficiency in NumPy, Pandas, and Matplotlib. Expert-level data manipulation, numerical computing, and visualization.</p>
+                    <div class="skill-tags">
+                        <span class="tag">NumPy (95%)</span>
+                        <span class="tag">Pandas (95%)</span>
+                        <span class="tag">Matplotlib (90%)</span>
+                        <span class="tag">SciPy</span>
+                    </div>
+                    <span class="skill-level expert">Expert</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🧠</div>
+                    <h3>EEG Signal Processing & Analysis</h3>
+                    <p>Deep expertise in brain signal processing. Pre-processing, artifact removal, feature extraction, and real-time signal pipelines.</p>
+                    <div class="skill-tags">
+                        <span class="tag">EEG Pre-processing</span>
+                        <span class="tag">FFT/Wavelets</span>
+                        <span class="tag">Feature Extraction</span>
+                        <span class="tag">Real-time Processing</span>
+                    </div>
+                    <span class="skill-level expert">Expert</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Machine Learning</h3>
+                    <p>Currently learning ML fundamentals with focus on classification algorithms, feature engineering, and model evaluation.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Classification Algorithms</span>
+                        <span class="tag">Feature Engineering</span>
+                        <span class="tag">Model Evaluation</span>
+                        <span class="tag">Cross-validation</span>
+                    </div>
+                    <span class="skill-level learning">Learning</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Deep Learning (Future Focus)</h3>
+                    <p>Planning to advance into Deep Learning. Focus will be on neural networks for BCI applications.</p>
+                    <div class="skill-tags">
+                        <span class="tag">CNNs</span>
+                        <span class="tag">RNNs</span>
+                        <span class="tag">Attention Mechanisms</span>
+                        <span class="tag">Transfer Learning</span>
+                    </div>
+                    <span class="skill-level future">Future</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Neural Decoding & BCI Algorithms</h3>
+                    <p>Designing algorithms for brain-computer interfaces. Signal-to-intent mapping, decoder training, and adaptation strategies.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Decoding Algorithms</span>
+                        <span class="tag">Pattern Recognition</span>
+                        <span class="tag">Calibration</span>
+                        <span class="tag">Real-time Classification</span>
+                    </div>
+                    <span class="skill-level expert">Expert</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development & Deployment</h3>
+                    <p>Building web interfaces for BCI systems and data dashboards. Full-stack development and cloud deployment.</p>
+                    <div class="skill-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Real-time Dashboards</span>
+                        <span class="tag">WebSockets</span>
+                        <span class="tag">Cloud Deployment</span>
+                    </div>
+                    <span class="skill-level proficient">Proficient</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="gradient-text">Featured Projects</span></h2>
+            <p class="section-subtitle">Showcasing my best work and creative solutions</p>
+
+            <div class="projects-list">
+                <div class="project-card featured">
+                    <div class="project-image">🚀</div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>NexusGroups.app - Learning Platform</h3>
+                            <span class="badge featured">⭐ Featured</span>
+                            <span class="badge income">💰 AdSense Revenue</span>
+                        </div>
+                        <p>Own product: Live student learning platform with 10K+ active users. Features AI-powered agent for learning, group collaboration hub, community forum.</p>
+                        <div class="project-tags">
+                            <span class="ptag">AI Agent</span>
+                            <span class="ptag">Group Hub</span>
+                            <span class="ptag">Community</span>
+                            <span class="ptag">AdSense</span>
+                            <span class="ptag">10K+ Users</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nexusgroups.app" target="_blank" class="project-link">→ View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🏥</div>
+                    <div class="project-content">
+                        <h3>Hospital Management System (HMS)</h3>
+                        <p>Client Project: Complete solution serving a healthcare practice. Full-featured patient management, appointment scheduling, medical records, and billing.</p>
+                        <div class="project-tags">
+                            <span class="ptag">Full-Stack</span>
+                            <span class="ptag">Healthcare</span>
+                            <span class="ptag">Database</span>
+                            <span class="ptag">Client Project</span>
+                            <span class="ptag">Live</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">✍️</div>
+                    <div class="project-content">
+                        <h3>SignifyPro - PDF Signing Platform</h3>
+                        <p>Product: Easy-to-use document signing solution. Secure PDF signing, digital signatures, and document management.</p>
+                        <div class="project-tags">
+                            <span class="ptag">React</span>
+                            <span class="ptag">PDF Processing</span>
+                            <span class="ptag">Security</span>
+                            <span class="ptag">Web App</span>
+                            <span class="ptag">Product</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🤖</div>
+                    <div class="project-content">
+                        <h3>AI Personal Assistant</h3>
+                        <p>Personal project: Intelligent conversational AI agent built in Python. Demonstrates advanced LLM integration and agent reasoning capabilities.</p>
+                        <div class="project-tags">
+                            <span class="ptag">Python</span>
+                            <span class="ptag">LLM</span>
+                            <span class="ptag">NLP</span>
+                            <span class="ptag">Conversational AI</span>
+                            <span class="ptag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="cert-header">
+                <h2 class="section-title"><span class="gradient-text">Professional Certificates</span></h2>
+                <p class="section-subtitle">Certifications and achievements from leading platforms and institutions</p>
+            </div>
+
+            <div class="certificates-grid">
+                <div class="cert-card" onclick="openCert('Acharya Namra Sharad Bhai Certificate.pdf', 'Web Development Internship', 'Labmentix Pvt. Ltd', 'June - July 2025')">
+                    <div class="cert-icon">🌐</div>
+                    <h3>Web Development Internship</h3>
+                    <p class="cert-issuer">Labmentix Pvt. Ltd</p>
+                    <p class="cert-desc">Successfully completed 2-month Web Development internship</p>
+                    <p class="cert-date">June - July 2025</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('AI_Certificate.pdf', 'Artificial Intelligence Beginners Guide', 'Simplilearn', 'January 7, 2026')">
+                    <div class="cert-icon">🤖</div>
+                    <h3>Artificial Intelligence Beginners Guide</h3>
+                    <p class="cert-issuer">Simplilearn</p>
+                    <p class="cert-desc">Demonstrated initiative in advancing AI skills</p>
+                    <p class="cert-date">January 7, 2026</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('Data_Mining_Certi.pdf', 'Introduction to Data Mining', 'Simplilearn', 'January 9, 2026')">
+                    <div class="cert-icon">📊</div>
+                    <h3>Introduction to Data Mining</h3>
+                    <p class="cert-issuer">Simplilearn</p>
+                    <p class="cert-desc">Successfully completed data mining fundamentals</p>
+                    <p class="cert-date">January 9, 2026</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('Cisco_Certificate.pdf', 'CCNA: Switching, Routing & Wireless', 'Cisco Networking Academy', 'November 5, 2025')">
+                    <div class="cert-icon">🔗</div>
+                    <h3>CCNA: Switching, Routing & Wireless</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-desc">Professional networking certification</p>
+                    <p class="cert-date">November 5, 2025</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('FP_DataCamp_Certificate.pdf', 'Introduction to Python', 'DataCamp', 'February 25, 2025')">
+                    <div class="cert-icon">🐍</div>
+                    <h3>Introduction to Python</h3>
+                    <p class="cert-issuer">DataCamp</p>
+                    <p class="cert-desc">4-hour comprehensive Python fundamentals course</p>
+                    <p class="cert-date">February 25, 2025</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('IBM_Python.pdf', 'Python 101 for Data Science', 'IBM Developer Skills Network', 'February 6, 2025')">
+                    <div class="cert-icon">📈</div>
+                    <h3>Python 101 for Data Science</h3>
+                    <p class="cert-issuer">IBM Developer Skills Network</p>
+                    <p class="cert-desc">Advanced Python for data science applications</p>
+                    <p class="cert-date">February 6, 2025</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('IBM JAVA CERTIFICATE .pdf', 'Java Fundamentals', 'IBM Developer Skills Network', 'November 19, 2024')">
+                    <div class="cert-icon">☕</div>
+                    <h3>Java Fundamentals</h3>
+                    <p class="cert-issuer">IBM Developer Skills Network</p>
+                    <p class="cert-desc">Comprehensive Java programming fundamentals</p>
+                    <p class="cert-date">November 19, 2024</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('Namra Acharaya_compressed.pdf', 'Karma Foundation Internship', 'Karma Foundation', 'December 2-14, 2024')">
+                    <div class="cert-icon">🌱</div>
+                    <h3>Karma Foundation Internship</h3>
+                    <p class="cert-issuer">Karma Foundation</p>
+                    <p class="cert-desc">Internship completion certificate</p>
+                    <p class="cert-date">December 2-14, 2024</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('Wadhwani Foundation Certificate - 65fa7778676ef3934d647408.pdf', '21st Century Employability Skills', 'Wadhwani Foundation', 'March 20, 2024')">
+                    <div class="cert-icon">💼</div>
+                    <h3>21st Century Employability Skills</h3>
+                    <p class="cert-issuer">Wadhwani Foundation</p>
+                    <p class="cert-desc">Advanced professional development program</p>
+                    <p class="cert-date">March 20, 2024</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('Java certi.pdf', 'Java Fundamentals', 'IBM Developer Skills Network', 'November 19, 2024')">
+                    <div class="cert-icon">🏆</div>
+                    <h3>Java Fundamentals</h3>
+                    <p class="cert-issuer">IBM Developer Skills Network</p>
+                    <p class="cert-desc">Comprehensive Java fundamentals course</p>
+                    <p class="cert-date">November 19, 2024</p>
+                </div>
+            </div>
+
+            <p class="cert-note">Click on any certificate to view the full PDF. Continuously learning and growing.</p>
+
+            <!-- Resume Download -->
+            <div class="resume-section">
+                <h3>📄 Download My Resume</h3>
+                <a id="resumeLink" href="#" download class="btn btn-primary" style="display: inline-block;">Download Resume (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="gradient-text">Let's Build Together</span></h2>
+            <p class="section-subtitle">Have a project idea? Let's turn your idea into a working product.</p>
+
+            <div class="contact-methods">
+                <a href="mailto:namra.acharya@example.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>namra.acharya@example.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/namra-acharya-b28490358/" target="_blank" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/namra-acharya</p>
+                </a>
+            </div>
+
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <textarea id="message" placeholder="Your message..." rows="6" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://github.com/Namra-Acharya" target="_blank" class="social-icon">🐙</a>
+                    <a href="https://www.linkedin.com/in/namra-acharya-b28490358/" target="_blank" class="social-icon">💼</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                </div>
+                <p>&copy; 2026 Namra Acharya. All rights reserved.</p>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">Crafted with ❤️ using HTML, CSS & JavaScript</p>
+                <a href="#home" class="back-to-top">↑ Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="certTitle"></h2>
+                <button class="modal-close" onclick="closeCert()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe id="pdfViewer" src="" title="Certificate"></iframe>
+            </div>
+            <div class="modal-footer">
+                <span id="certInfo"></span>
+                <a id="downloadBtn" href="#" download class="btn btn-primary">⬇️ Download PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Set base URL for assets
+        const baseUrl = window.location.pathname.includes('/namra_portfolio/')
+            ? '/namra_portfolio/'
+            : '/';
+
+        // Set resume link
+        const resumeLink = document.getElementById('resumeLink');
+        if (resumeLink) {
+            resumeLink.href = `${baseUrl}public/Namra_Acharya_Resume.pdf`;
+        }
+
+        // Mobile hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Certificate modal functions
+        function openCert(filename, title, issuer, date) {
+            const modal = document.getElementById('certModal');
+            const pdfViewer = document.getElementById('pdfViewer');
+            const certTitle = document.getElementById('certTitle');
+            const certInfo = document.getElementById('certInfo');
+            const downloadBtn = document.getElementById('downloadBtn');
+
+            // Use exact path without encoding - simpler and more reliable
+            const pdfPath = `${baseUrl}public/${filename}`;
+
+            pdfViewer.src = pdfPath;
+            certTitle.textContent = title;
+            certInfo.textContent = `${issuer} • ${date}`;
+            downloadBtn.href = pdfPath;
+            downloadBtn.download = filename;
+
+            modal.classList.add('active');
+        }
+
+        function closeCert() {
+            const modal = document.getElementById('certModal');
+            modal.classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            const modal = document.getElementById('certModal');
+            if (event.target === modal) {
+                closeCert();
+            }
+        });
+
+        // Contact form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = `New message from ${name}`;
+            const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+            window.location.href = `mailto:namra.acharya@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            alert('Thank you for your message! Your email client will open with your message.');
+
+            document.querySelector('.contact-form').reset();
+        }
+
+        // Smooth scroll behavior for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-card, .about-card, .cert-card, .project-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
 </html>
