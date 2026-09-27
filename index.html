@@ -1,648 +1,726 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Namra Acharya - AI Enthusiast, Full-Stack Developer, and Tech Innovator. Explore my portfolio, projects, and skills.">
-    <meta name="theme-color" content="#0f172a">
-    <title>Namra Acharya - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Namra Acharya — Machine Learning Engineer | Neural Signal Processing | BCI</title>
+  <meta name="description" content="Namra Acharya — Machine Learning Engineer focused on neural signal processing, brain–computer interfaces, and intelligent systems. Computer Science undergraduate building ML pipelines, EEG analysis workflows, and Python-based intelligent applications.">
+  <meta name="author" content="Namra Acharya">
+  <meta name="theme-color" content="#0b0c10">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Namra Acharya — Machine Learning Engineer | BCI">
+  <meta property="og:description" content="Building intelligent systems from data to neural signals.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0c10'/%3E%3Cpath d='M5 19 L9 11 L13 20 L17 12 L21 20 L26 14 L30 18' stroke='%2340b4ff' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='5' cy='19' r='1.8' fill='%2340b4ff'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Namra</div>
-            
-            <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#certificates" class="nav-link">Certificates</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <span class="hero-tag">🧠 BCI Researcher × Neural Signal Processing × AI Engineer</span>
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="gradient-text">Namra Acharya</span>
-                    </h1>
-                    <p class="hero-desc">
-                        Welcome! I'm dedicated to advancing Brain-Computer Interface technology through rigorous signal processing, neural decoding algorithms, and AI-driven solutions. My work focuses on bridging the gap between brain activity and computational systems.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-                <div class="hero-right">
-                    <div class="hero-card">
-                        <svg class="hero-svg" viewBox="0 0 100 100" fill="currentColor">
-                            <circle cx="50" cy="30" r="20" opacity="0.3"/>
-                            <circle cx="30" cy="70" r="15" opacity="0.2"/>
-                            <circle cx="70" cy="65" r="18" opacity="0.25"/>
-                            <path d="M50 30 L30 70 L70 65 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ============ ICON SPRITE ============ -->
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-github" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+    </symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 16 16">
+      <path fill="currentColor" fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+    </symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 16 16">
+      <path fill="currentColor" fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+    </symbol>
+    <symbol id="i-award" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+      <path fill="currentColor" d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+    </symbol>
+    <symbol id="i-eye" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+      <path fill="currentColor" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+    </symbol>
+    <symbol id="i-calendar" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+      <path fill="currentColor" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+    </symbol>
+    <symbol id="i-external" viewBox="0 0 16 16">
+      <path fill="currentColor" fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+      <path fill="currentColor" fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+    </symbol>
+    <symbol id="i-patch-check" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M2.5 1.5C2.397 1.053 2.054.687 1.469.023 1.1.438.922.934.788 1.5.47 1.982.244 2.438 1.022 2.917.724 3.375.885 3.435 1.273 2.978 1.838 2.542 2.312 3.042 3.39 2.75 3.818 2.49 4.25 3.083 4.319 3.591 4.292 4.13 4.438 4.183 4.5 4.15 4.5 4.32 4.77 4.313 5.021 4.293 5.334 4.32zM5.5 2.5h-1.75a.75.75 0 0 1-1.5 0v14a.75.75 0 0 1 0-1.5h5.75a.75.75 0 0 1 .75.75zM6.25 4a.75.75 0 0 1-.75-.75h-3.25a.75.75 0 0 1 0-2zM8 2.5v-1a.5.5 0 0 0-.5.5h7.5a.5.5 0 0 0 .5.5V2.5a.5.5 0 0 0-.5.5h-5.5.5.5 0 0 0-.5-.5zM9.5 7.5h1.5a.5.5 0 0 0 .5.5v4.5a.5.5 0 0 0-.5.5l-6.5.5.5 0 0 0 .5-.5.5-.5.5-.5a.5.5 0 0 0 .5.5v3.5a.5.5 0 0 0-.5.5h-1a.5.5 0 0 0-.5-.5z"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+      <path fill="currentColor" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+    </symbol>
+    <symbol id="i-copy" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+      <path fill="currentColor" d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 16 16">
+      <path fill="currentColor" d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+    </symbol>
+    <symbol id="i-list" viewBox="0 0 16 16">
+      <path fill="currentColor" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </symbol>
+    <symbol id="i-up" viewBox="0 0 16 16">
+      <path fill="currentColor" fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
+      <path fill="currentColor" fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z"/>
+    </symbol>
+  </svg>
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Namra Acharya — back to top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">NAMRA&nbsp;ACHARYA</span>
+      </a>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
-            <p class="section-subtitle">A Computer Science student passionate about advancing Brain-Computer Interface technology through rigorous signal processing and innovative AI solutions.</p>
+      <nav class="nav" id="navMenu" aria-label="Primary">
+        <a class="nav-link" href="#about" data-nav="about">About</a>
+        <a class="nav-link" href="#projects" data-nav="projects">Projects</a>
+        <a class="nav-link" href="#focus" data-nav="focus">Focus</a>
+        <a class="nav-link" href="#resumeArea" data-nav="resume">Resume</a>
+        <a class="nav-link" href="#education" data-nav="education">Education</a>
+        <a class="nav-link" href="#contact" data-nav="contact">Contact</a>
+      </nav>
 
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon">🎓</div>
-                    <h3>Background</h3>
-                    <ul class="about-list">
-                        <li>Computer Science (B.Tech 2024-2027)</li>
-                        <li>CGPA: 8.78/10</li>
-                        <li>4+ years hands-on learning</li>
-                        <li>Daily practice & deep focus</li>
-                    </ul>
-                </div>
-
-                <div class="about-card">
-                    <div class="about-icon">🎯</div>
-                    <h3>Primary Focus</h3>
-                    <ul class="about-list">
-                        <li>Brain-Computer Interfaces (BCI)</li>
-                        <li>EEG Signal Processing</li>
-                        <li>Neural Decoding Algorithms</li>
-                        <li>Advancing neurotechnology</li>
-                    </ul>
-                </div>
-
-                <div class="about-card">
-                    <div class="about-icon">⚡</div>
-                    <h3>Current Work</h3>
-                    <ul class="about-list">
-                        <li>Freelance BCI Researcher</li>
-                        <li>Working with real clients</li>
-                        <li>Custom AI Solutions</li>
-                        <li>Solving hard neurotechnology problems</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="vision-box">
-                <p><strong>Vision:</strong> I'm committed to advancing Brain-Computer Interface technology by developing robust signal processing pipelines, intelligent neural decoding algorithms, and practical BCI applications that solve real-world problems.</p>
-            </div>
-
-            <h3 class="expertise-title">Core Expertise</h3>
-            <div class="expertise-grid">
-                <div class="expertise-item">
-                    <div class="expertise-header">
-                        <span>NumPy</span>
-                        <span class="status expert">Expert</span>
-                    </div>
-                    <div class="expertise-bar">
-                        <div class="expertise-fill" style="width: 95%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
-                    </div>
-                    <span class="expertise-percent">95%</span>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-header">
-                        <span>Pandas</span>
-                        <span class="status expert">Expert</span>
-                    </div>
-                    <div class="expertise-bar">
-                        <div class="expertise-fill" style="width: 95%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
-                    </div>
-                    <span class="expertise-percent">95%</span>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-header">
-                        <span>Matplotlib</span>
-                        <span class="status expert">Expert</span>
-                    </div>
-                    <div class="expertise-bar">
-                        <div class="expertise-fill" style="width: 90%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
-                    </div>
-                    <span class="expertise-percent">90%</span>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-header">
-                        <span>EEG Signal Processing</span>
-                        <span class="status expert">Expert</span>
-                    </div>
-                    <div class="expertise-bar">
-                        <div class="expertise-fill" style="width: 90%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
-                    </div>
-                    <span class="expertise-percent">90%</span>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-header">
-                        <span>Machine Learning</span>
-                        <span class="status learning">Learning</span>
-                    </div>
-                    <div class="expertise-bar">
-                        <div class="expertise-fill" style="width: 70%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
-                    </div>
-                    <span class="expertise-percent">70%</span>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-header">
-                        <span>Deep Learning</span>
-                        <span class="status future">Future Focus</span>
-                    </div>
-                    <div class="expertise-bar">
-                        <div class="expertise-fill" style="width: 40%; background: linear-gradient(90deg, #a855f7, #d946ef);"></div>
-                    </div>
-                    <span class="expertise-percent">40%</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title"><span class="gradient-text">My Skills</span></h2>
-
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">🐍</div>
-                    <h3>Python Scientific Stack</h3>
-                    <p>90%+ proficiency in NumPy, Pandas, and Matplotlib. Expert-level data manipulation, numerical computing, and visualization.</p>
-                    <div class="skill-tags">
-                        <span class="tag">NumPy (95%)</span>
-                        <span class="tag">Pandas (95%)</span>
-                        <span class="tag">Matplotlib (90%)</span>
-                        <span class="tag">SciPy</span>
-                    </div>
-                    <span class="skill-level expert">Expert</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🧠</div>
-                    <h3>EEG Signal Processing & Analysis</h3>
-                    <p>Deep expertise in brain signal processing. Pre-processing, artifact removal, feature extraction, and real-time signal pipelines.</p>
-                    <div class="skill-tags">
-                        <span class="tag">EEG Pre-processing</span>
-                        <span class="tag">FFT/Wavelets</span>
-                        <span class="tag">Feature Extraction</span>
-                        <span class="tag">Real-time Processing</span>
-                    </div>
-                    <span class="skill-level expert">Expert</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">📊</div>
-                    <h3>Machine Learning</h3>
-                    <p>Currently learning ML fundamentals with focus on classification algorithms, feature engineering, and model evaluation.</p>
-                    <div class="skill-tags">
-                        <span class="tag">Classification Algorithms</span>
-                        <span class="tag">Feature Engineering</span>
-                        <span class="tag">Model Evaluation</span>
-                        <span class="tag">Cross-validation</span>
-                    </div>
-                    <span class="skill-level learning">Learning</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🤖</div>
-                    <h3>Deep Learning (Future Focus)</h3>
-                    <p>Planning to advance into Deep Learning. Focus will be on neural networks for BCI applications.</p>
-                    <div class="skill-tags">
-                        <span class="tag">CNNs</span>
-                        <span class="tag">RNNs</span>
-                        <span class="tag">Attention Mechanisms</span>
-                        <span class="tag">Transfer Learning</span>
-                    </div>
-                    <span class="skill-level future">Future</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">⚡</div>
-                    <h3>Neural Decoding & BCI Algorithms</h3>
-                    <p>Designing algorithms for brain-computer interfaces. Signal-to-intent mapping, decoder training, and adaptation strategies.</p>
-                    <div class="skill-tags">
-                        <span class="tag">Decoding Algorithms</span>
-                        <span class="tag">Pattern Recognition</span>
-                        <span class="tag">Calibration</span>
-                        <span class="tag">Real-time Classification</span>
-                    </div>
-                    <span class="skill-level expert">Expert</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Web Development & Deployment</h3>
-                    <p>Building web interfaces for BCI systems and data dashboards. Full-stack development and cloud deployment.</p>
-                    <div class="skill-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Real-time Dashboards</span>
-                        <span class="tag">WebSockets</span>
-                        <span class="tag">Cloud Deployment</span>
-                    </div>
-                    <span class="skill-level proficient">Proficient</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title"><span class="gradient-text">Featured Projects</span></h2>
-            <p class="section-subtitle">Showcasing my best work and creative solutions</p>
-
-            <div class="projects-list">
-                <div class="project-card featured">
-                    <div class="project-image">🚀</div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>NexusGroups.app - Learning Platform</h3>
-                            <span class="badge featured">⭐ Featured</span>
-                            <span class="badge income">💰 AdSense Revenue</span>
-                        </div>
-                        <p>Own product: Live student learning platform with 10K+ active users. Features AI-powered agent for learning, group collaboration hub, community forum.</p>
-                        <div class="project-tags">
-                            <span class="ptag">AI Agent</span>
-                            <span class="ptag">Group Hub</span>
-                            <span class="ptag">Community</span>
-                            <span class="ptag">AdSense</span>
-                            <span class="ptag">10K+ Users</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://nexusgroups.app" target="_blank" class="project-link">→ View Project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🏥</div>
-                    <div class="project-content">
-                        <h3>Hospital Management System (HMS)</h3>
-                        <p>Client Project: Complete solution serving a healthcare practice. Full-featured patient management, appointment scheduling, medical records, and billing.</p>
-                        <div class="project-tags">
-                            <span class="ptag">Full-Stack</span>
-                            <span class="ptag">Healthcare</span>
-                            <span class="ptag">Database</span>
-                            <span class="ptag">Client Project</span>
-                            <span class="ptag">Live</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">✍️</div>
-                    <div class="project-content">
-                        <h3>SignifyPro - PDF Signing Platform</h3>
-                        <p>Product: Easy-to-use document signing solution. Secure PDF signing, digital signatures, and document management.</p>
-                        <div class="project-tags">
-                            <span class="ptag">React</span>
-                            <span class="ptag">PDF Processing</span>
-                            <span class="ptag">Security</span>
-                            <span class="ptag">Web App</span>
-                            <span class="ptag">Product</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🤖</div>
-                    <div class="project-content">
-                        <h3>AI Personal Assistant</h3>
-                        <p>Personal project: Intelligent conversational AI agent built in Python. Demonstrates advanced LLM integration and agent reasoning capabilities.</p>
-                        <div class="project-tags">
-                            <span class="ptag">Python</span>
-                            <span class="ptag">LLM</span>
-                            <span class="ptag">NLP</span>
-                            <span class="ptag">Conversational AI</span>
-                            <span class="ptag">Personal Project</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
-        <div class="container">
-            <div class="cert-header">
-                <h2 class="section-title"><span class="gradient-text">Professional Certificates</span></h2>
-                <p class="section-subtitle">Certifications and achievements from leading platforms and institutions</p>
-            </div>
-
-            <div class="certificates-grid">
-                <div class="cert-card" onclick="openCert('Acharya Namra Sharad Bhai Certificate.pdf', 'Web Development Internship', 'Labmentix Pvt. Ltd', 'June - July 2025')">
-                    <div class="cert-icon">🌐</div>
-                    <h3>Web Development Internship</h3>
-                    <p class="cert-issuer">Labmentix Pvt. Ltd</p>
-                    <p class="cert-desc">Successfully completed 2-month Web Development internship</p>
-                    <p class="cert-date">June - July 2025</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('AI_Certificate.pdf', 'Artificial Intelligence Beginners Guide', 'Simplilearn', 'January 7, 2026')">
-                    <div class="cert-icon">🤖</div>
-                    <h3>Artificial Intelligence Beginners Guide</h3>
-                    <p class="cert-issuer">Simplilearn</p>
-                    <p class="cert-desc">Demonstrated initiative in advancing AI skills</p>
-                    <p class="cert-date">January 7, 2026</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('Data_Mining_Certi.pdf', 'Introduction to Data Mining', 'Simplilearn', 'January 9, 2026')">
-                    <div class="cert-icon">📊</div>
-                    <h3>Introduction to Data Mining</h3>
-                    <p class="cert-issuer">Simplilearn</p>
-                    <p class="cert-desc">Successfully completed data mining fundamentals</p>
-                    <p class="cert-date">January 9, 2026</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('Cisco_Certificate.pdf', 'CCNA: Switching, Routing & Wireless', 'Cisco Networking Academy', 'November 5, 2025')">
-                    <div class="cert-icon">🔗</div>
-                    <h3>CCNA: Switching, Routing & Wireless</h3>
-                    <p class="cert-issuer">Cisco Networking Academy</p>
-                    <p class="cert-desc">Professional networking certification</p>
-                    <p class="cert-date">November 5, 2025</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('FP_DataCamp_Certificate.pdf', 'Introduction to Python', 'DataCamp', 'February 25, 2025')">
-                    <div class="cert-icon">🐍</div>
-                    <h3>Introduction to Python</h3>
-                    <p class="cert-issuer">DataCamp</p>
-                    <p class="cert-desc">4-hour comprehensive Python fundamentals course</p>
-                    <p class="cert-date">February 25, 2025</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('IBM_Python.pdf', 'Python 101 for Data Science', 'IBM Developer Skills Network', 'February 6, 2025')">
-                    <div class="cert-icon">📈</div>
-                    <h3>Python 101 for Data Science</h3>
-                    <p class="cert-issuer">IBM Developer Skills Network</p>
-                    <p class="cert-desc">Advanced Python for data science applications</p>
-                    <p class="cert-date">February 6, 2025</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('IBM JAVA CERTIFICATE .pdf', 'Java Fundamentals', 'IBM Developer Skills Network', 'November 19, 2024')">
-                    <div class="cert-icon">☕</div>
-                    <h3>Java Fundamentals</h3>
-                    <p class="cert-issuer">IBM Developer Skills Network</p>
-                    <p class="cert-desc">Comprehensive Java programming fundamentals</p>
-                    <p class="cert-date">November 19, 2024</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('Namra Acharaya_compressed.pdf', 'Karma Foundation Internship', 'Karma Foundation', 'December 2-14, 2024')">
-                    <div class="cert-icon">🌱</div>
-                    <h3>Karma Foundation Internship</h3>
-                    <p class="cert-issuer">Karma Foundation</p>
-                    <p class="cert-desc">Internship completion certificate</p>
-                    <p class="cert-date">December 2-14, 2024</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('Wadhwani Foundation Certificate - 65fa7778676ef3934d647408.pdf', '21st Century Employability Skills', 'Wadhwani Foundation', 'March 20, 2024')">
-                    <div class="cert-icon">💼</div>
-                    <h3>21st Century Employability Skills</h3>
-                    <p class="cert-issuer">Wadhwani Foundation</p>
-                    <p class="cert-desc">Advanced professional development program</p>
-                    <p class="cert-date">March 20, 2024</p>
-                </div>
-
-                <div class="cert-card" onclick="openCert('Java certi.pdf', 'Java Fundamentals', 'IBM Developer Skills Network', 'November 19, 2024')">
-                    <div class="cert-icon">🏆</div>
-                    <h3>Java Fundamentals</h3>
-                    <p class="cert-issuer">IBM Developer Skills Network</p>
-                    <p class="cert-desc">Comprehensive Java fundamentals course</p>
-                    <p class="cert-date">November 19, 2024</p>
-                </div>
-            </div>
-
-            <p class="cert-note">Click on any certificate to view the full PDF. Continuously learning and growing.</p>
-
-            <!-- Resume Download -->
-            <div class="resume-section">
-                <h3>📄 Download My Resume</h3>
-                <a id="resumeLink" href="#" download class="btn btn-primary" style="display: inline-block;">Download Resume (PDF)</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title"><span class="gradient-text">Let's Build Together</span></h2>
-            <p class="section-subtitle">Have a project idea? Let's turn your idea into a working product.</p>
-
-            <div class="contact-methods">
-                <a href="mailto:namra.acharya@example.com" class="contact-card">
-                    <div class="contact-icon">✉️</div>
-                    <h3>Email</h3>
-                    <p>namra.acharya@example.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/namra-acharya-b28490358/" target="_blank" class="contact-card">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/namra-acharya</p>
-                </a>
-            </div>
-
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <input type="text" id="name" placeholder="Your name" required>
-                    <input type="email" id="email" placeholder="your@email.com" required>
-                </div>
-                <textarea id="message" placeholder="Your message..." rows="6" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/Namra-Acharya" target="_blank" class="social-icon">🐙</a>
-                    <a href="https://www.linkedin.com/in/namra-acharya-b28490358/" target="_blank" class="social-icon">💼</a>
-                    <a href="#" class="social-icon">𝕏</a>
-                </div>
-                <p>&copy; 2026 Namra Acharya. All rights reserved.</p>
-                <p style="font-size: 0.85rem; margin-top: 0.5rem;">Crafted with ❤️ using HTML, CSS & JavaScript</p>
-                <a href="#home" class="back-to-top">↑ Back to Top</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Certificate Modal -->
-    <div id="certModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="certTitle"></h2>
-                <button class="modal-close" onclick="closeCert()">&times;</button>
-            </div>
-            <div class="modal-body">
-                <iframe id="pdfViewer" src="" title="Certificate"></iframe>
-            </div>
-            <div class="modal-footer">
-                <span id="certInfo"></span>
-                <a id="downloadBtn" href="#" download class="btn btn-primary" style="display: none;">⬇️ Download PDF</a>
-            </div>
-        </div>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <svg class="icon icon-open" aria-hidden="true"><use href="#i-list"></use></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"></use></svg>
+      </button>
     </div>
+  </header>
 
-    <script>
-        // Set base URL for assets
-        const baseUrl = window.location.pathname.includes('/namra_portfolio/')
-            ? '/namra_portfolio/'
-            : '/';
+  <main id="main">
 
-        // Set resume link
-        const resumeLink = document.getElementById('resumeLink');
-        if (resumeLink) {
-            resumeLink.href = `${baseUrl}docs/public/Namra_Acharya_Resume.pdf`;
-            resumeLink.download = 'Namra_Acharya_Resume.pdf';
-        }
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span class="eyebrow-text"><span>MACHINE LEARNING ENGINEER</span><span aria-hidden="true"> / </span><span>NEURAL SIGNAL PROCESSING</span><span aria-hidden="true"> / </span><span>BCI</span></span></p>
 
-        // Function to show download button for resume
-        function openResume() {
-            const modal = document.getElementById('certModal');
-            const pdfViewer = document.getElementById('pdfViewer');
-            const certTitle = document.getElementById('certTitle');
-            const certInfo = document.getElementById('certInfo');
-            const downloadBtn = document.getElementById('downloadBtn');
+          <h1 class="hero-title" id="heroTitle">Building intelligent systems <span class="hero-title-cont">from data to neural signals<span class="cursor" aria-hidden="true">_</span></span></h1>
 
-            const pdfPath = `${baseUrl}docs/public/Namra_Acharya_Resume.pdf`;
+          <p class="hero-sub">Machine Learning Engineer focused on neural signal processing, brain–computer interfaces, and intelligent systems.</p>
 
-            pdfViewer.src = pdfPath;
-            certTitle.textContent = 'My Resume';
-            certInfo.textContent = 'Download your copy';
-            downloadBtn.href = pdfPath;
-            downloadBtn.download = 'Namra_Acharya_Resume.pdf';
-            downloadBtn.style.display = 'block'; // Show download button for resume
+          <p class="hero-desc">Computer Science undergraduate focused on Machine Learning, EEG signal processing, and Brain–Computer Interfaces, with hands-on experience building ML pipelines, feature engineering workflows, neural-signal analysis systems, and Python-based intelligent applications.</p>
 
-            modal.classList.add('active');
-        }
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+            <a class="btn btn-ghost" href="assets/resume/BCI_ML_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume <svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg></a>
+            <a class="btn btn-ghost" href="assets/resume/BCI_ML_Resume.pdf" download="Namra_Acharya_Resume.pdf">Download Resume <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg></a>
+          </div>
+          <p class="resume-meta mono">&middot; resume last updated &middot; 2026</p>
 
-        // Mobile hamburger menu
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
+          <div class="hero-links" aria-label="Profile links">
+            <span class="hero-links-label" aria-hidden="true">profiles</span>
+            <a href="https://github.com/Namra-Acharya" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg><span>GitHub</span></a>
+            <a href="https://www.linkedin.com/in/namra-acharya-b28490358/" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg><span>LinkedIn</span></a>
+            <a href="mailto:namraaacharya@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg><span>Email</span></a>
+          </div>
+        </div>
 
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
+        <div class="hero-visual">
+          <div class="signal-panel">
+            <canvas id="signalCanvas" width="720" height="420" aria-hidden="true"></canvas>
+          </div>
+          <p class="signal-caption"><span class="status-dot" aria-hidden="true"></span><span class="mono">signal_pipeline</span><span class="mono dim">&nbsp;· simulated for illustration</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">01</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">about</span>
+          </div>
+          <h2 id="aboutTitle">Engineering with a focus on <em>intelligent systems.</em></h2>
+        </div>
 
-        // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
+        <div class="about-body reveal">
+          <div class="about-copy">
+            <p>I am a Computer Science undergraduate building expertise across machine learning, signal processing, brain–computer interfaces, Python engineering, and AI systems.</p>
+            <p>My interest lies in transforming complex data into useful intelligent systems — designing the pipelines, features, and models that turn raw measurements into decisions.</p>
+          </div>
+          <ul class="about-areas mono">
+            <li><span class="area-idx">01</span>Machine Learning</li>
+            <li><span class="area-idx">02</span>Signal Processing</li>
+            <li><span class="area-idx">03</span>Brain–Computer Interfaces</li>
+            <li><span class="area-idx">04</span>Python Engineering</li>
+            <li><span class="area-idx">05</span>AI Systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        // Certificate modal functions
-        function openCert(filename, title, issuer, date) {
-            const modal = document.getElementById('certModal');
-            const pdfViewer = document.getElementById('pdfViewer');
-            const certTitle = document.getElementById('certTitle');
-            const certInfo = document.getElementById('certInfo');
-            const downloadBtn = document.getElementById('downloadBtn');
+    <!-- ============ TECHNICAL FOCUS ============ -->
+    <section class="section section-dark" id="focus" aria-labelledby="focusTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">02</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">technical focus</span>
+          </div>
+          <h2 id="focusTitle">Areas of <em>technical work</em></h2>
+        </div>
 
-            // Use exact path to certificates folder
-            const pdfPath = `${baseUrl}docs/public/${filename}`;
+        <div class="focus-grid">
+          <article class="focus-card reveal">
+            <div class="focus-head">
+              <span class="mono">01</span>
+              <h3>Machine Learning</h3>
+            </div>
+            <ul class="focus-list">
+              <li>Supervised Learning</li>
+              <li>Regression</li>
+              <li>Classification</li>
+              <li>Feature Engineering</li>
+              <li>Feature Selection</li>
+              <li>Model Evaluation</li>
+              <li>Cross Validation</li>
+              <li>Regularization</li>
+            </ul>
+          </article>
 
-            pdfViewer.src = pdfPath;
-            certTitle.textContent = title;
-            certInfo.textContent = `${issuer} • ${date}`;
-            downloadBtn.href = pdfPath;
-            downloadBtn.download = filename;
-            downloadBtn.style.display = 'none'; // Hide download button for certificates
+          <article class="focus-card reveal">
+            <div class="focus-head">
+              <span class="mono">02</span>
+              <h3>Neural Signal Processing</h3>
+            </div>
+            <ul class="focus-list">
+              <li>EEG Analysis</li>
+              <li>MNE-Python</li>
+              <li>FFT</li>
+              <li>PSD</li>
+              <li>Frequency Bands</li>
+              <li>Filtering</li>
+              <li>Epoching</li>
+              <li>Feature Extraction</li>
+            </ul>
+          </article>
 
-            modal.classList.add('active');
-        }
+          <article class="focus-card reveal">
+            <div class="focus-head">
+              <span class="mono">03</span>
+              <h3>Brain–Computer Interfaces</h3>
+            </div>
+            <ul class="focus-list">
+              <li>Motor Imagery</li>
+              <li>Neural Decoding</li>
+              <li>CSP</li>
+              <li>LDA / SVM</li>
+              <li>EEG-based Classification</li>
+              <li>Human–Computer Interaction</li>
+            </ul>
+          </article>
 
-        function closeCert() {
-            const modal = document.getElementById('certModal');
-            modal.classList.remove('active');
-        }
+          <article class="focus-card reveal">
+            <div class="focus-head">
+              <span class="mono">04</span>
+              <h3>Engineering</h3>
+            </div>
+            <ul class="focus-list">
+              <li>Python</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>SciPy</li>
+              <li>scikit-learn</li>
+              <li>SQL</li>
+              <li>REST APIs</li>
+              <li>Git</li>
+              <li>Automation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">03</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">featured projects</span>
+          </div>
+          <h2 id="projectsTitle">Selected <em>builds</em></h2>
+          <p class="section-note mono">click a card for full details</p>
+        </div>
 
-        // Close modal when clicking outside
-        window.addEventListener('click', (event) => {
-            const modal = document.getElementById('certModal');
-            if (event.target === modal) {
-                closeCert();
-            }
-        });
+        <div class="projects-list">
 
-        // Contact form submission
-        function handleSubmit(event) {
-            event.preventDefault();
+          <article class="project-card reveal" data-project="motor-imagery-eeg-bci" tabindex="0" aria-label="Motor Imagery EEG BCI — open project details">
+            <div class="project-topbar">
+              <span class="project-num mono">P.01</span>
+              <span class="status-badge"><span class="status-dot" aria-hidden="true"></span>IN PROGRESS</span>
+            </div>
+            <h3 class="project-title">Motor Imagery EEG BCI</h3>
+            <p class="project-desc">Built an EEG preprocessing and feature-extraction pipeline for motor imagery classification.</p>
+            <p class="project-desc2">Developing ML-based neural decoding for left/right motor imagery with signal processing, spatial features, and classification.</p>
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+            <div class="project-arch mono" aria-hidden="true">
+              <div class="arch-flow">
+                <span>EEG</span>
+                <span class="arch-arrow">&#8595;</span>
+                <span>Preprocessing</span>
+                <span class="arch-arrow">&#8595;</span>
+                <span>Feature Extraction</span>
+                <span class="arch-arrow">&#8595;</span>
+                <span>ML Decoder</span>
+                <span class="arch-arrow">&#8595;</span>
+                <span>Motor Imagery Class</span>
+              </div>
+            </div>
 
-            const subject = `New message from ${name}`;
-            const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+            <ul class="project-tech mono">
+              <li>Python</li><li>MNE</li><li>SciPy</li><li>scikit-learn</li><li>EEG</li>
+            </ul>
 
-            window.location.href = `mailto:namra.acharya@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            <div class="project-actions">
+              <a class="btn btn-sm" href="https://github.com/Namra-Acharya" target="_blank" rel="noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a>
+              <button class="btn btn-sm btn-ghost" type="button" data-case="motor-imagery-eeg-bci">Case Study <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+            </div>
+          </article>
 
-            alert('Thank you for your message! Your email client will open with your message.');
+          <article class="project-card reveal" data-project="automated-ml-pipeline" tabindex="0" aria-label="Automated Machine Learning Pipeline — open project details">
+            <div class="project-topbar">
+              <span class="project-num mono">P.02</span>
+              <span class="status-badge status-done"><span class="status-dot" aria-hidden="true"></span>COMPLETE</span>
+            </div>
+            <h3 class="project-title">Automated Machine Learning Pipeline</h3>
+            <p class="project-desc">Built an end-to-end machine learning workflow covering preprocessing, feature engineering, model training, evaluation, and model comparison.</p>
 
-            document.querySelector('.contact-form').reset();
-        }
+            <ul class="project-highlights">
+              <li>Missing value handling</li>
+              <li>Encoding</li>
+              <li>Feature processing</li>
+              <li>Model comparison</li>
+            </ul>
 
-        // Smooth scroll behavior for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && document.querySelector(href)) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+            <ul class="project-tech mono">
+              <li>Python</li><li>Pandas</li><li>scikit-learn</li>
+            </ul>
 
-        // Add scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+            <div class="project-actions">
+              <a class="btn btn-sm" href="https://github.com/Namra-Acharya" target="_blank" rel="noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a>
+              <button class="btn btn-sm btn-ghost" type="button" data-case="automated-ml-pipeline">Case Study <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+            </div>
+          </article>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+          <article class="project-card reveal" data-project="iris-ai-assistant" tabindex="0" aria-label="IRIS — AI Desktop Assistant — open project details">
+            <div class="project-topbar">
+              <span class="project-num mono">P.03</span>
+              <span class="status-badge status-done"><span class="status-dot" aria-hidden="true"></span>COMPLETE</span>
+            </div>
+            <h3 class="project-title">IRIS — AI Desktop Assistant</h3>
+            <p class="project-desc">Built a modular AI desktop assistant integrating LLM APIs with application control and task execution.</p>
 
-        document.querySelectorAll('.skill-card, .about-card, .cert-card, .project-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
+            <ul class="project-highlights">
+              <li>Modular architecture</li>
+              <li>Application control</li>
+              <li>Keyboard / mouse automation</li>
+              <li>Task execution</li>
+              <li>API integration</li>
+            </ul>
+
+            <ul class="project-tech mono">
+              <li>Python</li><li>LLM APIs</li><li>Automation</li><li>Computer Control</li>
+            </ul>
+
+            <div class="project-actions">
+              <a class="btn btn-sm" href="https://github.com/Namra-Acharya" target="_blank" rel="noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a>
+              <button class="btn btn-sm btn-ghost" type="button" data-case="iris-ai-assistant">Case Study <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- ============ BCI / NEURAL SIGNAL PROCESSING ============ -->
+    <section class="section section-dark" id="bci" aria-labelledby="bciTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">04</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">neural signal processing · bci</span>
+          </div>
+          <h2 id="bciTitle">From neural signals to <em>intelligent decisions</em></h2>
+          <p class="section-note mono">eeg → preprocessing → frequency analysis → feature extraction → neural decoding → classification → control</p>
+        </div>
+
+        <div class="bci-flow mono" role="img" aria-label="EEG signal to control pipeline: EEG Signal, Preprocessing, Frequency Analysis, Feature Extraction, Neural Decoding, Classification, Control">
+          <span class="bci-node">EEG Signal</span><span class="bci-arrow" aria-hidden="true">&#8594;</span>
+          <span class="bci-node">Preprocessing</span><span class="bci-arrow" aria-hidden="true">&#8594;</span>
+          <span class="bci-node">Frequency Analysis</span><span class="bci-arrow" aria-hidden="true">&#8594;</span>
+          <span class="bci-node">Feature Extraction</span><span class="bci-arrow" aria-hidden="true">&#8594;</span>
+          <span class="bci-node">Neural Decoding</span><span class="bci-arrow" aria-hidden="true">&#8594;</span>
+          <span class="bci-node">Classification</span><span class="bci-arrow" aria-hidden="true">&#8594;</span>
+          <span class="bci-node">Control</span>
+        </div>
+
+        <div class="bci-stages">
+          <article class="bci-stage reveal">
+            <header><span class="mono stage-idx">01</span><h3 class="mono stage-title">SIGNAL</h3></header>
+            <p>Raw EEG recordings contain complex temporal neural activity.</p>
+          </article>
+          <article class="bci-stage reveal">
+            <header><span class="mono stage-idx">02</span><h3 class="mono stage-title">PREPROCESS</h3></header>
+            <p>Filtering and preprocessing reduce unwanted signal components.</p>
+          </article>
+          <article class="bci-stage reveal">
+            <header><span class="mono stage-idx">03</span><h3 class="mono stage-title">FEATURES</h3></header>
+            <p>Extract frequency and spatial information useful for classification.</p>
+          </article>
+          <article class="bci-stage reveal">
+            <header><span class="mono stage-idx">04</span><h3 class="mono stage-title">DECODER</h3></header>
+            <p>Machine learning maps neural features to intended actions.</p>
+          </article>
+          <article class="bci-stage reveal">
+            <header><span class="mono stage-idx">05</span><h3 class="mono stage-title">OUTPUT</h3></header>
+            <p>Predicted intent can be translated into a computer command.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ============ MACHINE LEARNING ============ -->
+    <section class="section" id="ml" aria-labelledby="mlTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">05</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">machine learning workflow</span>
+          </div>
+          <h2 id="mlTitle">A disciplined approach to <em>machine learning</em></h2>
+        </div>
+
+        <div class="ml-layout">
+          <ol class="ml-steps">
+            <li class="ml-step reveal">
+              <span class="ml-step-idx mono">01</span>
+              <div><h3 class="mono">DATA</h3><p>Load and inspect — shape, types, missingness, distributions.</p></div>
+            </li>
+            <li class="ml-step reveal">
+              <span class="ml-step-idx mono">02</span>
+              <div><h3 class="mono">CLEAN</h3><p>Handle missing values, outliers, and inconsistent types.</p></div>
+            </li>
+            <li class="ml-step reveal">
+              <span class="ml-step-idx mono">03</span>
+              <div><h3 class="mono">EXPLORE</h3><p>Understand structure, target relationships, and drift risk.</p></div>
+            </li>
+            <li class="ml-step reveal">
+              <span class="ml-step-idx mono">04</span>
+              <div><h3 class="mono">ENGINEER</h3><p>Build features and transformations deliberately — no leakage.</p></div>
+            </li>
+            <li class="ml-step reveal">
+              <span class="ml-step-idx mono">05</span>
+              <div><h3 class="mono">TRAIN</h3><p>Fit models on train folds only; stratify when classes are imbalanced.</p></div>
+            </li>
+            <li class="ml-step reveal">
+              <span class="ml-step-idx mono">06</span>
+              <div><h3 class="mono">VALIDATE</h3><p>Cross-validate and tune without touching the test set.</p></div>
+            </li>
+            <li class="ml-step reveal">
+              <span class="ml-step-idx mono">07</span>
+              <div><h3 class="mono">EVALUATE</h3><p>Report fit-for-purpose metrics and compare baselines honestly.</p></div>
+            </li>
+          </ol>
+
+          <aside class="ml-principles reveal">
+            <p class="side-kicker mono">engineering constraints</p>
+            <ul class="principle-list">
+              <li><strong>Data quality</strong><span>A pipeline is only as trustworthy as its inputs.</span></li>
+              <li><strong>Feature engineering</strong><span>Domain-informed features matter more than model tweaks.</span></li>
+              <li><strong>Leakage prevention</strong><span>Every transformation is fitted on train data only.</span></li>
+              <li><strong>Proper validation</strong><span>Cross-validation that mirrors real deployment.</span></li>
+              <li><strong>Evaluation metrics</strong><span>Metrics chosen for the decision being made.</span></li>
+              <li><strong>Reproducibility</strong><span>Seeded runs, versioned data, documented steps.</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!-- ============ ENGINEERING / SYSTEMS ============ -->
+    <section class="section section-dark" id="engineering" aria-labelledby="engineeringTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">06</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">engineering · systems</span>
+          </div>
+          <h2 id="engineeringTitle">Building systems, not just <em>models</em></h2>
+        </div>
+
+        <div class="eng-grid">
+          <article class="eng-card reveal">
+            <div class="eng-head">
+              <span class="mono">AI</span>
+              <h3>AI Systems</h3>
+            </div>
+            <ul>
+              <li>LLM APIs</li>
+              <li>Task execution</li>
+              <li>Tool integration</li>
+              <li>Automation</li>
+            </ul>
+          </article>
+
+          <article class="eng-card reveal">
+            <div class="eng-head">
+              <span class="mono">SW</span>
+              <h3>Software Engineering</h3>
+            </div>
+            <ul>
+              <li>Modular architecture</li>
+              <li>Testing</li>
+              <li>Reusable components</li>
+              <li>API integration</li>
+            </ul>
+          </article>
+
+          <article class="eng-card reveal">
+            <div class="eng-head">
+              <span class="mono">DB</span>
+              <h3>Data Systems</h3>
+            </div>
+            <ul>
+              <li>Data processing</li>
+              <li>SQL</li>
+              <li>Pipelines</li>
+              <li>Feature engineering</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience" aria-labelledby="experienceTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">07</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">experience</span>
+          </div>
+          <h2 id="experienceTitle">Internship <em>experience</em></h2>
+        </div>
+        <div class="exp-list" id="expList" role="list"></div>
+      </div>
+    </section>
+<!-- ============ EDUCATION ============ -->
+    <section class="section section-dark" id="education" aria-labelledby="educationTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">08</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">education</span>
+          </div>
+          <h2 id="educationTitle">Education</h2>
+        </div>
+
+        <div class="edu-list reveal">
+          <div class="edu-row">
+            <div class="edu-main">
+              <h3>B.Tech — Computer Science &amp; Engineering</h3>
+              <p class="edu-school">Ganpat University</p>
+            </div>
+            <p class="edu-years mono">2024–2027</p>
+          </div>
+          <div class="edu-row">
+            <div class="edu-main">
+              <h3>Diploma — Computer Engineering</h3>
+              <p class="edu-school">Gujarat Technological University</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <section class="section" id="credentials" aria-labelledby="credentialsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">09</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">credentials</span>
+          </div>
+          <h2 id="credentialsTitle">Credentials &amp; <em>Certifications</em></h2>
+          <p class="section-note">Selected certifications, training programs, and technical credentials supporting my work across machine learning, software engineering, data science, and systems.</p>
+        </div>
+
+        <div class="cred-summary reveal">
+          <div class="cred-summary-count">
+            <span class="cred-count-num" id="credCount">0</span>
+            <span class="cred-count-label mono">credentials</span>
+          </div>
+          <span class="cred-summary-sep" aria-hidden="true"></span>
+          <div class="cred-summary-timeline">
+            <span class="cred-timeline-range mono" id="credTimeline">&ndash;&ndash;</span>
+            <span class="cred-timeline-label mono">learning timeline</span>
+          </div>
+          <span class="sr-only" aria-live="polite" id="credStatus"></span>
+        </div>
+
+        <div class="cred-toolbar reveal">
+          <div class="cred-filters" role="group" aria-label="Filter credentials by category">
+            <button class="cred-filter is-active" type="button" data-filter="all" aria-pressed="true">ALL</button>
+            <button class="cred-filter" type="button" data-filter="ml-ai">MACHINE LEARNING / AI</button>
+            <button class="cred-filter" type="button" data-filter="python-data">PYTHON / DATA</button>
+            <button class="cred-filter" type="button" data-filter="software">SOFTWARE ENGINEERING</button>
+            <button class="cred-filter" type="button" data-filter="systems">SYSTEMS / NETWORKING</button>
+            <button class="cred-filter" type="button" data-filter="other">OTHER</button>
+          </div>
+          <div class="cred-search">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+            <label class="sr-only" for="credSearchInput">Search credentials by title</label>
+            <input type="search" id="credSearchInput" class="cred-search-input" placeholder="Search credentials..." autocomplete="off">
+          </div>
+        </div>
+
+        <div class="cred-grid" id="credGrid" role="list"></div>
+
+        <p class="cred-empty" id="credEmpty" hidden>No credentials match your search.</p>
+
+        <div class="cred-resume-cta reveal" id="resumeArea">
+          <p class="side-kicker mono">complete profile</p>
+          <p class="cred-resume-title">Interested in my complete profile?</p>
+          <div class="cred-resume-actions">
+            <a class="btn btn-primary" href="assets/resume/BCI_ML_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume <svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg></a>
+            <a class="btn btn-ghost" href="assets/resume/BCI_ML_Resume.pdf" download="Namra_Acharya_Resume.pdf">Download Resume <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg></a>
+          </div>
+          <p class="resume-meta mono">&middot; resume last updated &middot; 2026</p>
+        </div>
+      </div>
+    </section>
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-dark" id="contact" aria-labelledby="contactTitle">
+      <div class="container contact-inner">
+        <div class="section-head reveal">
+          <div class="section-meta">
+            <span class="section-index mono">10</span>
+            <span class="section-rule" aria-hidden="true"></span>
+            <span class="section-label mono">contact</span>
+          </div>
+          <h2 id="contactTitle">Let's build <em>intelligent systems</em></h2>
+        </div>
+
+        <div class="contact-body reveal">
+          <p class="contact-lead">Interested in machine learning, neural interfaces, and intelligent systems? Let's connect.</p>
+
+          <div class="contact-address mono">
+            <span class="contact-address-label" aria-hidden="true">~/contact</span>
+            <span id="contactEmail">namraaacharya@gmail.com</span>
+            <button class="copy-btn" id="copyEmailBtn" type="button" aria-label="Copy email address to clipboard">
+              <span class="copy-default"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg><span>Copy</span></span>
+              <span class="copy-done"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><span>Copied</span></span>
+            </button>
+            <span class="sr-only" aria-live="polite" id="copyFeedback"></span>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:namraaacharya@gmail.com">Email <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg></a>
+            <a class="btn btn-ghost" href="https://github.com/Namra-Acharya" target="_blank" rel="noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/namra-acharya-b28490358/" target="_blank" rel="noreferrer">LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a>
+            <a class="btn btn-ghost" href="assets/resume/BCI_ML_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume <svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg></a>
+            <a class="btn btn-ghost" href="assets/resume/BCI_ML_Resume.pdf" download="Namra_Acharya_Resume.pdf">Download Resume <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name">NAMRA ACHARYA</p>
+        <p class="footer-roles mono">Machine Learning Engineer<br>Neural Signal Processing<br>Brain–Computer Interfaces</p>
+      </div>
+      <nav class="footer-links mono" aria-label="Footer">
+        <a href="https://github.com/Namra-Acharya" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>GitHub</a>
+        <a href="https://www.linkedin.com/in/namra-acharya-b28490358/" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>LinkedIn</a>
+        <a href="mailto:namraaacharya@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>Email</a>
+      </nav>
+    </div>
+    <div class="container footer-legal mono">
+      <span id="footerYear">© 2026 Namra Acharya</span>
+      <span class="footer-sep" aria-hidden="true">·</span>
+      <span>built with html / css / js</span>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg class="icon" aria-hidden="true"><use href="#i-up"></use></svg>
+  </button>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal" role="document">
+      <button class="modal-close" id="modalCloseBtn" type="button" aria-label="Close project details">
+        <svg class="icon" aria-hidden="true"><use href="#i-x"></use></svg>
+      </button>
+      <p class="modal-kicker mono" id="modalKicker"></p>
+      <h3 id="modalTitle"></h3>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ============ CREDENTIAL MODAL (certificate viewer) ============ -->
+  <div class="modal-overlay" id="credModal" role="dialog" aria-modal="true" aria-labelledby="credModalTitle" hidden>
+    <div class="modal modal-wide" role="document">
+      <button class="modal-close" id="credModalCloseBtn" type="button" aria-label="Close certificate viewer">
+        <svg class="icon" aria-hidden="true"><use href="#i-x"></use></svg>
+      </button>
+      <div class="cred-viewer">
+        <div class="cred-preview" id="credPreview">
+          <iframe id="credPreviewFrame" title="Certificate PDF preview" loading="lazy"></iframe>
+          <div class="cred-preview-actions">
+            <a class="btn btn-ghost btn-sm" id="credOpenPdfBtn" href="#" target="_blank" rel="noopener noreferrer">Open PDF <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg></a>
+            <a class="btn btn-ghost btn-sm" id="credDlPdfBtn" href="#" download="">Download <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg></a>
+          </div>
+        </div>
+        <div class="cred-viewer-meta">
+          <p class="modal-kicker mono" id="credModalKicker"></p>
+          <h3 id="credModalTitle"></h3>
+          <dl class="cred-viewer-list" id="credViewerList"></dl>
+          <p class="cred-viewer-verify-wrap" id="credViewerVerify" hidden></p>
+          <p class="cred-viewer-pending mono" id="credViewerPending" hidden>PDF file not uploaded yet — verify via the credential link below or check back soon.</p>
+          <div class="cred-viewer-actions">
+            <a class="btn btn-primary" id="credModalDownloadBtn" href="#">Download Certificate <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
 </body>
 </html>

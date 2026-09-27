@@ -1,14 +1,11 @@
 {
   "name": "namra-portfolio",
-  "version": "1.0.0",
-  "description": "Namra Acharya - Portfolio Website",
-  "type": "module",
-  "main": "index.html",
+  "version": "2.0.0",
+  "description": "Namra Acharya — Machine Learning Engineer | Neural Signal Processing | Brain-Computer Interfaces. Static portfolio built with HTML5, CSS3, and vanilla JavaScript.",
+  "private": true,
   "scripts": {
-    "serve": "npx http-server -p 3000",
-    "dev": "npx http-server -p 3000"
+    "serve": "python -m http.server 3000"
   },
-  "keywords": ["portfolio", "developer", "bci"],
-  "author": "Namra Acharya",
+  "keywords": ["portfolio", "machine-learning", "bci", "eeg", "neural-signal-processing", "static-site"],
   "license": "MIT"
 }
